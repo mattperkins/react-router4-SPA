@@ -1,9 +1,12 @@
 import * as React from 'react'
+import { NavLink, withRouter } from 'react-router-dom'
 
-export default () => (
+const Navbar = () => (
    <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <li><NavLink to="/">Home</NavLink></li>
+    <li><NavLink to="/about">About</NavLink></li>
+    <li><NavLink to="/contact">Contact</NavLink></li>
    </ul>
 )
+
+export default withRouter(Navbar)

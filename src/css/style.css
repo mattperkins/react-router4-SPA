@@ -7,7 +7,6 @@
 h1{
  font-weight: 100;
  font-size: 5.2rem;
- margin-bottom: -30px;
 }
 input {
  margin-right: 10px;
@@ -27,4 +26,10 @@ input, button{
  border-radius: 6px;
  height: 60px;
  width: 220px
+}
+li{
+ list-style-type: none;
+ padding: 5px;
+ display: inline-block;
+ margin-right: 5px;
 }
