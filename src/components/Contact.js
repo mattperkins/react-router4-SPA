@@ -1,6 +1,7 @@
 import * as React from 'react'
 
 export default (props) => {
+ // redirects to about page after 1 sec
  setTimeout(() => {
   props.history.push('/about')
  }, 1000) 
