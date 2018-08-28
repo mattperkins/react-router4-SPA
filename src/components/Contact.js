@@ -8,6 +8,6 @@ export default (props) => {
  return (
 <div>
  <h1>Contact</h1>
- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint delectus repellendus esse mollitia dicta aliquid molestias temporibus reiciendis et! Ipsa doloribus facilis voluptatum, cum blanditiis omnis nobis eius repudiandae repellat.</p>
+ <p>settimout function redirects to about page</p>
 </div>
  )}
