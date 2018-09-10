@@ -5,6 +5,10 @@ import registerServiceWorker from './registerServiceWorker'
 import './css/reset.css'
 import './css/style.css'
 import App from './App'
+import { createStore } from 'redux'
+
+const store = createStore()
+
 
 // main ("ROOT") component 
 class Root extends React.Component {
