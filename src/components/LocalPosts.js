@@ -10,7 +10,7 @@ class LocalPosts extends React.Component{
    localPosts.map(localPosts => {
     return(
      <div key={localPosts.id}>
-      <Link to={'/localPosts' + localPosts.id}>
+      <Link to={'/' + localPosts.id}>
        <h1>{localPosts.title}</h1>
        <p>{localPosts.body}</p>
       </Link>
