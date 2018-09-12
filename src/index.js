@@ -6,8 +6,10 @@ import './css/reset.css'
 import './css/style.css'
 import App from './App'
 import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import rootReducer from './reducers/rootReducer'
 
-const store = createStore()
+const store = createStore(rootReducer)
 
 
 // main ("ROOT") component 
@@ -17,8 +19,7 @@ render() {
 
 return (
 
-<App />
-
+<Provider store={store}><App /></Provider>
 
 )// end return
 }// end render
