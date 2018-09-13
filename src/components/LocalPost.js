@@ -1,9 +1,9 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
-
 class LocalPost extends React.Component{
 
  render(){
+  console.log(this.props)
   const localPost = this.props.localPost ? (
    <div>
     <h1>{this.props.localPost.title}</h1>
@@ -27,4 +27,11 @@ const mapStateToProps = ( state, ownProps ) => {
   } 
 }
 
-export default connect(mapStateToProps)(LocalPost)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    deletePost: (id) => { dispatch({type: 'DELETE_POST', id})}
+}
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(LocalPost)
