@@ -16,7 +16,7 @@ class Home extends React.Component{
        </div>
     )
    })
-  ) : <p>Loading posts...</p>
+  ) : <p>No posts to display...</p>
   return(
     <div>{postList}</div>
   )
